@@ -1,0 +1,201 @@
+<!-- <input type="text" #box (input)="getValue(box.value)" placeholder="Enter Name" name="name">
+
+
+
+<button (click)="getValue(box.value)">Click</button>
+<p> Box Value is {{displayVal}}</p> -->
+
+<!-- <h1 *ngIf="show else elseBlock">
+    Rushikesh
+</h1>
+
+<ng-template #elseBlock>
+<h1>Else Block</h1>
+</ng-template> -->
+
+<!-- <button (click)="getName('rusikesh')" >click</button> -->
+
+<!-- <button (click)="increment()">increment</button>
+{{counter}}
+<button (click)="decrement()">decrement</button><br><br><br><br>
+
+<button (click)="getIncDec('increment')">++</button>
+{{count}}
+<button (click)="getIncDec('decrement')">--</button>
+<br><br> -->
+
+<!-- <label for="id1">Price :</label>
+<input type="number" name="price" id="id1" (input)="productPriceChange($event)">
+<br><br>
+<label for="id2">Quantity :</label>
+<input type="number" name="qty" id="id2" (input)="productQuantityChange($event)">
+<br><br>
+<button (click)="calculate()"> calculate</button>
+<h3>{{totalPrice}}</h3>
+
+<input type="text" name="p_price" id="id1" placeholder="Product price" [(ngModel)]="productPrice"><br><br>
+<input type="text" name="p_quantity" id="id2" placeholder="Product price" [(ngModel)]="productQty">
+<br><br>
+<button (click)="calculateTotal()">Total Price</button>
+<h3> Total Price of Product is {{totalPriceOfProduct}}</h3>
+
+<h3>{{joiningDate | date | date:'shortDate' | date: 'mediumDate' | date: 'dd/MM/yyyy'}}</h3> -->
+<!-- 
+<h4>{{msg | uppercase}}</h4>
+<h4>{{msg | lowercase}}</h4>
+<h4>{{msg | titlecase}}</h4> -->
+<!-- 
+<h4>{{income | currency}}</h4>
+<h4>{{income | currency:'INR'}}</h4>
+<h4>{{income | number:'.3-1'}}</h4> -->
+
+<!-- <div class="input-group mb-3">
+    <input type="Number" class="form-control" placeholder="First number" name="f_num" [(ngModel)]="firstNumber" >
+  </div>
+  <br> -->
+<!-- 
+<div class="input-group mb-3">
+    <input type="number" class="form-control" placeholder="Second number" name="s_num" [(ngModel)]="secondNumber">
+  </div>
+
+  <button type="button" class="btn btn-primary ms-2" (click)="calculator('addition')">Addition</button>
+  <button type="button" class="btn btn-primary ms-2" (click)="calculator('subtraction')">Substraction</button>
+  <button type="button" class="btn btn-primary ms-2" (click)="calculator('multiplication')">Multiplication</button>
+  <button type="button" class="btn btn-primary ms-2" (click)="calculator('division')">Division</button>
+
+    <h4>{{calculatedValue}}</h4>
+<br><br> -->
+
+<!-- <select name="statesData" id="id1" [(ngModel)]="selectedState" (ngModelChange)="onStateChange()">
+  <option *ngFor="let state of states" [value]="state">{{state}}</option>
+</select>
+<select name="states" id="id1" [(ngModel)]="selectedCity">
+  <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+</select>
+
+<h4>{{selectedCity}}</h4> -->
+
+
+<!-- <div *ngIf="isShow">
+<label for="id1"> First Name</label>
+<input type="text" id="=id1" name="fname"><br><br>
+
+</div>
+<button type="button" (click)="toggle()">Toggle</button><br><br>
+
+
+<div *ngIf="showData; else anotherBlock">
+<label for="id2">Person Name</label>
+<input type="text" id="id2" name="p_name">
+</div>
+
+<ng-template  #anotherBlock>
+<label for="id3">Entity Name</label>
+<input type="text" id="id3" name="e_name">
+</ng-template> -->
+
+<!-- <div class="container">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Employee Name </th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+      </tr>
+    </thead> -->
+    <!-- <tbody> -->
+      <!-- <tr *ngFor="let item of employeeList; let i = index"> -->
+        <!-- <th scope="row">{{i+1}}</th>
+        <td>{{item.empName}}</td>
+        <td>{{item.designation}}</td>
+        <td>{{item.salary}}</td>
+      </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+<br><br> -->
+
+<!-- <div class="container">
+  <label for="">Contact Preference</label>
+  <input type="radio" name="contactPreference"  value="mobile" [(ngModel)]="selectedPreference" >Mobile
+  <input type="radio" name="contactPreference"  value="email" [(ngModel)]="selectedPreference" >Email
+
+
+<div *ngIf="selectedPreference ==='mobile'">
+  <label for="mobileNumber">MObile No</label>
+  <input type="text" id="mobileNumber" name="mob" [(ngModel)]="mobileNo">
+</div>
+<div *ngIf="selectedPreference ==='email'">
+  <label for="emailAddress">Email Id</label>
+  <input type="email" id="emailAddress" name="email" [(ngModel)]="emailId">
+</div>
+
+</div> -->
+
+<!-- <br><br> -->
+<div class="container w-50">
+  <div class="mb-3">
+    <label for="f_name" class="form-label">Name : </label>
+    <input type="email" class="form-control" id="f_name" [(ngModel)]="name">
+  </div>
+  <div class="mb-3">
+    <label for="mob_No" class="form-label">Mobile : </label>
+    <input type="text" class="form-control" id="mob_No" [(ngModel)]="mob_No">
+  </div>
+  <button type="button" *ngIf="mob_No" class="btn btn-primary" (click)="getOtp($event)">Get Otp</button>
+
+  <div class="mb-3">
+    <label for="rec_otp" class="form-label">OTP NO : </label>
+    <input type="text" *ngIf="otpBtn" class="form-control" id="rec_otp" [(ngModel)]="recievedOtp">
+  </div>
+
+
+  <button type="button" *ngIf="recievedOtp" class="btn btn-primary" (click)="otpVerified()">Verify</button>
+
+</div>
+
+<div class="container ">
+
+  <table class="table  table-bordered border-primary">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let employee of employeeList; let i = index; let o=odd; let e=even">
+        
+      <tr *ngIf="employee.salary >50000 " > 
+        <th scope="row">{{i+1}}</th>
+        <td>{{employee.empName}}</td>
+        <td>{{employee.designation}}</td>
+        <td>{{employee.salary}}</td>
+      </tr>
+    </ng-container>
+      
+       
+   
+    </tbody>
+  </table>
+</div>
+
+<h4 appHighlight> hello friends</h4>
+
+<h3 [appHighlightTwo]="false"> Hii Programmer</h3>
+
+
+<h4 appHoverEffect>Hover me to change Background color</h4>
+
+<label for="id13">Enter your name</label>
+<input type="text" name="f-name" [(ngModel)]="FirstName" appCapitalize> <br><br><br>
+
+<label for="num">Enter Mobile Number</label>
+<input type="text" name="mob-num" [(ngModel)]="mobileNumber" appMobileNumberDirective>
+ 

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Child Component:</h4>
+            <div class="mb-3">
+                <label for="id2" class="form-label">Message </label>
+                <input type="text" class="form-control" id="id2" name="msg2" [(ngModel)]="childMessage">
+            </div>
+            <button type="button" class="btn btn-primary mb-2" (click)="sendMessage()">Submit</button>
+          
+        </div>
+    </div>
+</div>
