@@ -13,6 +13,7 @@ import { MobileNumberDirectiveDirective } from './custom-directive/mobile-number
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component'
 import { MyLowerCasePipe } from './pipes/myLowerCase.pipe';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MyLowerCasePipe } from './pipes/myLowerCase.pipe';
     MobileNumberDirectiveDirective,
     ChildComponent,
     ParentComponent,
-    MyLowerCasePipe
+    MyLowerCasePipe,
+    LoginComponent
     
   ],
   imports: [
