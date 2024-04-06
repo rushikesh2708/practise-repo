@@ -169,4 +169,6 @@ otpVerified(){
 FirstName:string =""
 
 mobileNumber:string=""
+
+msg1:string = "WELCOME TO CODING ERA"
 }

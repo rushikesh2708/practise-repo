@@ -12,7 +12,7 @@ import { CapitalizeDirective } from './custom-directive/capitalize.directive';
 import { MobileNumberDirectiveDirective } from './custom-directive/mobile-number-directive.directive';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component'
-
+import { MyLowerCasePipe } from './pipes/myLowerCase.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { ParentComponent } from './parent/parent.component'
     CapitalizeDirective,
     MobileNumberDirectiveDirective,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    MyLowerCasePipe
     
   ],
   imports: [
