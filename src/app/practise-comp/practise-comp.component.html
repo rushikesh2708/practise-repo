@@ -200,4 +200,22 @@
 <input type="text" name="mob-num" [(ngModel)]="mobileNumber" appMobileNumberDirective>
 
 <h3>{{ msg1 | myLowerCase}}</h3>
+
+<h4>{{int1 | lakhConverter}}</h4>
+
+<h3>City</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 p-2 m-2">
+      <label for="cities">Search</label>
+      <input type="text" name="searchText" id="cities" [(ngModel)]="searchText" >
+
+    </div>
+
+  </div>
+  <ul class="list-group w-50">
+    <li *ngFor="let city of cityArr  searchPipe : searchText">{{city}}</li>
+  </ul>
+</div>
+
  

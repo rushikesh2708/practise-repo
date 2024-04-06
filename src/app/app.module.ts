@@ -14,6 +14,8 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component'
 import { MyLowerCasePipe } from './pipes/myLowerCase.pipe';
 import { LoginComponent } from './login/login.component';
+import {LakhConverterPipe} from "./pipes/lakhconverter.pipe";
+import { SearchPipePipe } from './pipes/search-pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LoginComponent } from './login/login.component';
     ChildComponent,
     ParentComponent,
     MyLowerCasePipe,
-    LoginComponent
+    LoginComponent,
+    LakhConverterPipe,
+    SearchPipePipe
     
   ],
   imports: [

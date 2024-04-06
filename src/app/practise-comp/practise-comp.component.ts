@@ -171,4 +171,9 @@ FirstName:string =""
 mobileNumber:string=""
 
 msg1:string = "WELCOME TO CODING ERA"
+
+int1:number = 1253000
+
+cityArr:string[]=["Mumbai","Pune","Nashik","Nagpur","Delhi","Banglore","Chennai","Amritsar","Ahmedabad","Agra"]
+searchText:string = ""
 }
